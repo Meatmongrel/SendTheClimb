@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/5d80fc0687.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>Climb Search</title>
 </head>
@@ -12,7 +13,7 @@
     <div class="wrapper">
         <main>
                 <header>
-                        <h2>Search Climbs in Your Area</h2>
+                        <h2 id="title" class="search">Search Climbs in Your Area</h2>
                 </header>
                 <nav>
                     <ul>
@@ -21,7 +22,7 @@
                         <a href="#"><li class="nav-element selected">Search</li></a>
                     </ul>
                 </nav>
-                <form action="#" method="GET">
+                <form action="#" method="GET" id="search-form">
                         <div class="form-elements">
                             <label for="min-diff">Min difficulty of climb</label>
                             <input type="text" name="min-diff" id="min-diff" required placeholder="5.6/5.7... V0/V1">
@@ -39,6 +40,14 @@
                 <ul class="climb-list"></ul>
             </main>
         </div>
+        <footer>
+                <h3 id="footer-name">&copy;Andrew Thiessen</h3>
+        
+                <div class="icon-div">
+                    <a href="https://github.com/Meatmongrel"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/AndrewWebDev_"><i class="fab fa-twitter"></i></a>
+                </div>
+        </footer>
     <script src="app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2zzNlBqtD-ApeZ7E4-jNV2kQUhYJXQBM&callback=initMap" async defer></script>
 </body>

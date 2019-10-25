@@ -49,6 +49,7 @@ table {
 *{
     /* --main-color: #038254; */
     --main-color: #E87641;
+    --tertiary-color: rgb(187, 93, 50);
     --nav-color: #3d7a65;
     --secondary-color: #3E515E;
     --hovered-color: #04a369;
@@ -73,10 +74,33 @@ main{
     height: 100%;
 }
 
+footer{
+    background: var(--secondary-color);
+    padding: 1.5vh 1vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 2vw;
+}
+
+#footer-name{
+    align-self: center;
+    font-size: 1.5vw;
+}
+
+.fab{
+    margin: 0 1vw;
+    transition: 0.15s color;
+}
+
+.fab:hover{
+    color: var(--tertiary-color)
+}
 
 #title {
     font-size: 5vw;
-    padding: 2vh 2vw;
+    padding: 3vh 2vw;
     text-shadow: 1px 1px 10px rgb(84, 7, 94), 10px 10px rgb(220, 117, 20),
     15px 15px rgb(221, 224, 12)
 }
@@ -121,7 +145,7 @@ ul {
 }
 
 .card-title:hover{
-    color: var(--hovered-color);
+    color: var(--tertiary-color);
     cursor: pointer;
 }
 
@@ -192,7 +216,7 @@ form{
 .info-title{
     font-size: 3vh;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--nav-color);
 }
 
 .info-window{
@@ -215,7 +239,37 @@ form{
     margin-top: 2vh;
     border-radius: 5vw;
     font-size: 3vh;
-    background: var(--main-color)
+    background: var(--main-color);
+    box-shadow: 3px 3px lavender;
+    outline: none;
+}
+
+#about-div{
+    display: flex;
+    justify-items: center;
+    margin-left: 33vw;
+    margin-top: 10vh;
+    text-align: center;
+    width: 33vw;
+    border: 1px solid black;
+    padding: 1vh 2vw;
+    background: linear-gradient(to bottom, var(--secondary-color), rgb(3, 8, 48));
+}
+
+#about{
+    font-size: 2vw;
+}
+
+h2.search {
+    padding: 3vh 0vw;
+}
+
+.heading{
+    text-align: center;
+}
+
+#form-submit:active{
+    box-shadow: 1px 1px lavender;
 }
 
 h2{
@@ -264,7 +318,9 @@ ul{
 
 .card-title{
     text-shadow: 2px 2px 5px black;
+    transition: 0.15s color;
 }
+
 
 .card-image{
     width: 5vw;
@@ -285,9 +341,9 @@ p{
 }
 
 @media screen and (max-width: 1280px){
-    form{
+    #search-form{
         font-size: 2vw;
-        margin-left: 31vw;
+        margin-left: 35vw;
     }
     [type="text"], [type="number"]{
         font-size: 2vw;
