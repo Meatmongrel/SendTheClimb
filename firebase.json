@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "frontend-climb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
