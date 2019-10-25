@@ -1,6 +1,6 @@
 # SendTheClimb
 <h3>The app that helps you find your next project!</h3>
-https://send-the-climb.firebaseapp.com/
+https://send-the-climb.firebaseapp.com/ <br>
 This app I made in a week finds nearby climbs relative to Flatiron School's (The Hub 3601 Walnut St, Denver, CO 80205) location.
 <br>
 There were features I wanted to impliment before this week was up, but wasn't able to due to time constraints. I challenged myself to make it purely front end, although originally users were planned for the project the idea was ultimately scrapped.
