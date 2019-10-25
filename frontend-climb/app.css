@@ -343,7 +343,8 @@ p{
 @media screen and (max-width: 1280px){
     #search-form{
         font-size: 2vw;
-        margin-left: 35vw;
+        margin-left: 37vw;
+        margin-right: 37vw;
     }
     [type="text"], [type="number"]{
         font-size: 2vw;
