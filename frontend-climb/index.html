@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5d80fc0687.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="app.css">
     <title>Send The Climb</title>
 </head>
@@ -12,31 +14,25 @@
         <div class="header-container">
             <img src="./assets/Send.png" alt="Send The Climb Logo">
             <h1 id="title">SendTheClimb</h1>
+            <h3 id="slogan">Welcome to SendTheClimb, the app that finds you your next project!</h3>
         </div>
     </header>
     <main>
-        <div class="container">
-            <nav>
-                <ul>
-                    <a href="#"><li class="nav-element selected">Home</li></a>
-                    <a href="/about.html"><li class="nav-element">About</li></a>
-                    <a href="/climb_list.html"><li class="nav-element">Climb List</li></a>
-                    <a href="/login.html"><li class="nav-element">Login</li></a>
-                </ul>
-            </nav>
-            <form action="#" method="GET">
-                <div class="form-elements">
-                    <label for="difficulty">Difficulty of climb</label>
-                    <input type="text" id="difficulty" name="difficulty">
-                    <label for="distance">Distance from climb</label>
-                    <input type="number" id="distance" name="distance">
-                    <button id="form-submit">Search a Climb</button>
-                </div>
-            </form>
+        <h2 id="sub-title">Let's start out with a list of climbs within 10 miles of your location</h2>
+        <nav>
+            <ul>
+                <a href="#"><li class="nav-element selected">Home</li></a>
+                <a href="/about.html"><li class="nav-element">About</li></a>
+                <a href="/search.html"><li class="nav-element">Search</li></a>
+            </ul>
+        </nav>
+        <div class="map-div">
+            <div id="map"></div>
         </div>
-
+        <ul class="list"></ul>
     </main>
 
-    <script src="app.js"></script>
+    <script src="home.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2zzNlBqtD-ApeZ7E4-jNV2kQUhYJXQBM&callback=initMap" async defer></script>
 </body>
 </html>

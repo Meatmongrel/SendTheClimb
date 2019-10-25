@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Climb Search</title>
+</head>
+<body id="climb-html">
+    <div class="wrapper">
+        <main>
+                <header>
+                        <h2>Search Climbs in Your Area</h2>
+                </header>
+                <nav>
+                    <ul>
+                        <a href="/index.html"><li class="nav-element">Home</li></a>
+                        <a href="/about.html"><li class="nav-element">About</li></a>
+                        <a href="#"><li class="nav-element selected">Search</li></a>
+                    </ul>
+                </nav>
+                <form action="#" method="GET">
+                        <div class="form-elements">
+                            <label for="min-diff">Min difficulty of climb</label>
+                            <input type="text" name="min-diff" id="min-diff" required placeholder="5.6/5.7... V0/V1">
+                            <label for="difficulty">Max difficulty of climb</label>
+                            <input type="text" id="difficulty" name="difficulty" required placeholder="5.10/5.11... V5/V6">
+                            <label for="distance">Distance from climb</label>
+                            <input type="number" id="distance" name="distance" required max="50" placeholder="10 miles">
+                            <button id="form-submit">Search Climbs</button>
+                        </div>
+                </form>
+                <h3 class="results"></h3>
+                <div class="map-div">
+                    <div id="map"></div>
+                </div>
+                <ul class="climb-list"></ul>
+            </main>
+        </div>
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2zzNlBqtD-ApeZ7E4-jNV2kQUhYJXQBM&callback=initMap" async defer></script>
+</body>
+</html>
